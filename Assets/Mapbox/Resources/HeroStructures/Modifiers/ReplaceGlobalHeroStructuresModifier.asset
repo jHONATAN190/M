@@ -94,7 +94,7 @@ MonoBehaviour:
       type: 3}
     scaleDownWithWorld: 1
     _prefabLocations:
-    - 4.6025092767212445, -74.07207420542524
+    - 6.24475, -75.57483
     _explicitlyBlockedFeatureIds: []
   - Name: Unicancer
     active: 1
@@ -102,5 +102,5 @@ MonoBehaviour:
       type: 3}
     scaleDownWithWorld: 1
     _prefabLocations:
-    - 3.4321443406208756, -76.54056452877906
+    - 3.44, -76.51972
     _explicitlyBlockedFeatureIds: []

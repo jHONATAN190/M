@@ -615,7 +615,7 @@ namespace Mapbox.Unity.Map
 		/// This method uses the mapOptions and layer properties to setup the map to be rendered.
 		/// Override <c>SetUpMap</c> to write custom behavior to map setup.
 		/// </summary>
-		protected virtual void SetUpMap()
+		public virtual void SetUpMap()
 		{
 			SetPlacementStrategy();
 
