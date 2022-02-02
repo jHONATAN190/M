@@ -32,13 +32,13 @@ MonoBehaviour:
     _prefabLocations:
     - 37.8024, -122.405833
     _explicitlyBlockedFeatureIds: []
-  - Name: ParqueDeLa93
+  - Name: IpsSuraFlora
     active: 1
-    prefab: {fileID: 4683628571189339387, guid: 6729c1d207ecbea45947658d64849d8e,
+    prefab: {fileID: 4683628571189339387, guid: e1307594c9f1b6442af347b8973e748a,
       type: 3}
     scaleDownWithWorld: 1
     _prefabLocations:
-    - 4.6373798677686136, -74.06710008399988
+    - 3.476929903402999, -76.52443564239535
     _explicitlyBlockedFeatureIds:
     - 4216643201
   - Name: EmpireStateBuilding
@@ -96,11 +96,11 @@ MonoBehaviour:
     _prefabLocations:
     - 4.6025092767212445, -74.07207420542524
     _explicitlyBlockedFeatureIds: []
-  - Name: AyudasDxAlenta
+  - Name: Unicancer
     active: 1
-    prefab: {fileID: 4683628571189339387, guid: 061ee51b4fd89494b9607197dd8df328,
+    prefab: {fileID: 4683628571189339387, guid: 19255f398261d6b4fa238b7e7aeaf446,
       type: 3}
     scaleDownWithWorld: 1
     _prefabLocations:
-    - 4.621114567046921, -74.0735294305558
+    - 3.4321443406208756, -76.54056452877906
     _explicitlyBlockedFeatureIds: []
