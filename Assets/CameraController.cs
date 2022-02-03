@@ -1,6 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CameraController : MonoBehaviour
 {
@@ -38,8 +40,26 @@ public class CameraController : MonoBehaviour
     public Vector3 rotateStartPosition;
     public Vector3 rotateCurrentPosition;
 
-    // Start is called before the first frame update
-    void Start()
+    public float zoomSensitivity = 15;
+    public float swipeSensitivity = 15;
+
+    public float swipeThreshold = 50f;
+    public float timeThreshold = 0.3f;
+
+   /* public UnityEvent OnSwipeLeft;
+    public UnityEvent OnSwipeRight;
+    public UnityEvent OnSwipeUp;
+    public UnityEvent OnSwipeDown;*/
+
+    private Vector2 fingerDown;
+    private DateTime fingerDownTime;
+    private Vector2 fingerUp;
+    private DateTime fingerUpTime;
+
+    
+
+// Start is called before the first frame update
+void Start()
     {
         newPosition = transform.position;
         newRotation = transform.rotation;
@@ -49,17 +69,87 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleMovementInput();
+    if (Input.GetMouseButtonDown(0))
+    {
+        this.fingerDown = Input.mousePosition;
+        this.fingerUp = Input.mousePosition;
+        this.fingerDownTime = DateTime.Now;
+    }
+    if (Input.GetMouseButtonUp(0))
+    {
+        this.fingerDown = Input.mousePosition;
+        this.fingerUpTime = DateTime.Now;
+        this.CheckSwipe();
+    }
+    /*foreach (Touch touch in Input.touches)
+    {
+        if (touch.phase == TouchPhase.Began)
+        {
+            this.fingerDown = touch.position;
+            this.fingerUp = touch.position;
+            this.fingerDownTime = DateTime.Now;
+        }
+        if (touch.phase == TouchPhase.Ended)
+        {
+            this.fingerDown = touch.position;
+            this.fingerUpTime = DateTime.Now;
+            this.CheckSwipe();
+        }
+    }*/
+         HandleMovementInput();
         HandleMouseInput();
     }
+    private void CheckSwipe()
+    {
+        float duration = (float)this.fingerUpTime.Subtract(this.fingerDownTime).TotalSeconds;
+        if (duration > this.timeThreshold) return;
 
+        float deltaX = this.fingerDown.x - this.fingerUp.x;
+        if (Mathf.Abs(deltaX) > this.swipeThreshold)
+        {
+            if (deltaX > 0)
+            {
+              //  this.OnSwipeRight.Invoke();
+                Debug.Log("right");
+                newPosition += (transform.right * -_camMovementSpeed) * swipeSensitivity;
+
+            }
+            else if (deltaX < 0)
+            {
+               // this.OnSwipeLeft.Invoke();
+                Debug.Log("left");
+                newPosition += (transform.right * _camMovementSpeed) * swipeSensitivity;
+
+            }
+        }
+
+        float deltaY = fingerDown.y - fingerUp.y;
+        if (Mathf.Abs(deltaY) > this.swipeThreshold)
+        {
+            if (deltaY > 0)
+            {
+              //  this.OnSwipeUp.Invoke();
+                Debug.Log("up");
+                newPosition += (transform.up * -_camMovementSpeed) * swipeSensitivity;
+
+            }
+            else if (deltaY < 0)
+            {
+              //  this.OnSwipeDown.Invoke();
+                Debug.Log("down");
+                newPosition += (transform.up * _camMovementSpeed) * swipeSensitivity;
+            }
+        }
+
+        this.fingerUp = this.fingerDown;
+    }
     void HandleMouseInput()
     {
         //Scroll zooming
         if (Input.mouseScrollDelta.y != 0)
         {
 
-            newZoom += Input.mouseScrollDelta.y * zoomAmount;
+           /* newZoom += Input.mouseScrollDelta.y * zoomAmount;
 
             if (newZoom.y <= 30) //Max zoom limit
             {
@@ -68,8 +158,8 @@ public class CameraController : MonoBehaviour
             } else if (newZoom.y >= 220) //Min zoom limit
             {
                 newZoom = new Vector3(0, 120, -120);
-            }
-
+            }*/
+            newPosition += (transform.forward * Input.mouseScrollDelta.y )* zoomSensitivity;
         }
 
         //Camera rotating on mouse scroll button hold
@@ -86,7 +176,7 @@ public class CameraController : MonoBehaviour
 
             rotateStartPosition = rotateCurrentPosition;
 
-            newRotation *= Quaternion.Euler(Vector3.up * (-difference.x / 5));
+            newRotation *= Quaternion.Euler(Vector3.right * (-difference.x / 5));
         }
 
     }
@@ -104,22 +194,22 @@ public class CameraController : MonoBehaviour
             _camMovementSpeed = _camSpeed;
         }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y >= Screen.height - _camBorderMovement)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) /*|| Input.mousePosition.y >= Screen.height - _camBorderMovement*/)
         {
-            newPosition += (transform.forward * _camMovementSpeed);
+            newPosition += (transform.up * _camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || Input.mousePosition.y <= _camBorderMovement)
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) /*|| Input.mousePosition.y <= _camBorderMovement*/)
         {
-            newPosition += (transform.forward * -_camMovementSpeed);
+            newPosition += (transform.up * -_camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.mousePosition.x >= Screen.width - _camBorderMovement)
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)/* || Input.mousePosition.x >= Screen.width - _camBorderMovement*/)
         {
             newPosition += (transform.right * _camMovementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.mousePosition.x <= _camBorderMovement)
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)/* || Input.mousePosition.x <= _camBorderMovement*/)
         {
             newPosition += (transform.right * -_camMovementSpeed);
         }

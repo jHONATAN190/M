@@ -102,7 +102,7 @@ namespace Mapbox.Examples
 				if (!(Mathf.Approximately(x, 0) && Mathf.Approximately(y, 0) && Mathf.Approximately(z, 0)))
 				{
 					transform.localPosition += transform.forward * y + (_originalRotation * new Vector3(x * _panSpeed, 0, z * _panSpeed));
-					_map.UpdateMap();
+					//_map.UpdateMap();
 				}
 			}
 
