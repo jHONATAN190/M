@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6438922364939465719}
   - component: {fileID: 3201792513374716959}
   m_Layer: 0
-  m_Name: AyudasDxAlenta
+  m_Name: CentroComercialPortal80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4683628571189339387}
   m_LocalRotation: {x: 0, y: 0.22495107, z: 0, w: 0.9743701}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 169, z: 0}
   m_LocalScale: {x: 18, y: 5, z: -6}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f6fdab16b734c64b925cefb4cb8baef, type: 2}
+  - {fileID: 2100000, guid: bd4509965139a834f8a31647b3929310, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
