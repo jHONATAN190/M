@@ -2718,7 +2718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: Cali
-  _cameraPosition: {x: -85, y: 139, z: -12}
+  _cameraPosition: {x: -261, y: 384, z: -232}
   _cameraRotation: {x: 61, y: 15, z: 4}
 --- !u!114 &114111281151064552
 MonoBehaviour:
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: Barranquilla
-  _cameraPosition: {x: -85, y: 139, z: -12}
+  _cameraPosition: {x: -261, y: 384, z: -232}
   _cameraRotation: {x: 61, y: 15, z: 4}
 --- !u!114 &114251791870035594
 MonoBehaviour:
@@ -3098,7 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: Cartajena
-  _cameraPosition: {x: -85, y: 139, z: -12}
+  _cameraPosition: {x: -261, y: 384, z: -232}
   _cameraRotation: {x: 61, y: 15, z: 4}
 --- !u!114 &114991532312704942
 MonoBehaviour:
@@ -3526,7 +3526,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8140309776411358273}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.6075909
+  m_Size: 0.6100001
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4163,7 +4163,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3271483857108135506}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
