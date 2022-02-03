@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ade7ea2a146442b9575619cf724737, type: 3}
+  m_Name: Prueba2
+  m_EditorClassIdentifier: 
+  Active: 1
+  features:
+  - Name: BienestarIps
+    active: 1
+    prefab: {fileID: 4683628571189339387, guid: a764b3422ab2ec14daf68eb7cf0c3e54,
+      type: 3}
+    scaleDownWithWorld: 1
+    _prefabLocations:
+    - 4.729288403365551, -74.06826743592184
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: Medellin
+    active: 0
+    prefab: {fileID: 1196953851599986, guid: 420dd66b1453e2244ae14aefc801975c, type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 6.24475, -75.57483
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: Cali
+    active: 0
+    prefab: {fileID: 1064074361305596, guid: 9f4301dda10849d46954027666a52751, type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 3.44, -76.51972
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: Barranquilla
+    active: 0
+    prefab: {fileID: 1064074361305596, guid: 7a31be5af5bd41f4c97c721cee4d9905, type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 10.96389, -74.79639
+    _explicitlyBlockedFeatureIds:
+    - 

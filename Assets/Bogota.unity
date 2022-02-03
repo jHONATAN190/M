@@ -943,6 +943,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1007490966251712, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
+      propertyPath: m_Name
+      value: Button - IpsSuraChapinero
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131148194433144, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
+      propertyPath: m_Name
+      value: "Button -  IPSColm\xE9dicaCountryPark "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260969326548518, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
+      propertyPath: m_Name
+      value: Button - IPSColsubsidioSur
+      objectReference: {fileID: 0}
     - target: {fileID: 1483631521150012, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
       propertyPath: m_Name
       value: Button - BienestarIps
@@ -950,6 +962,14 @@ PrefabInstance:
     - target: {fileID: 1817219559335382, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858272186363556, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
+      propertyPath: m_Name
+      value: Button - ClinicaPalermo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863125566655036, guid: aaa51caf037dd4424bab8d45ef3be316, type: 3}
+      propertyPath: m_Name
+      value: Button - Ips Salud
       objectReference: {fileID: 0}
     - target: {fileID: 114035459605040000, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
@@ -959,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 114080423598663096, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
       propertyPath: location
-      value: Parque De La 93
+      value: Ips Salud
       objectReference: {fileID: 0}
     - target: {fileID: 114104293458475558, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
@@ -996,10 +1016,55 @@ PrefabInstance:
       propertyPath: _cameraRotation.z
       value: 0.075521134
       objectReference: {fileID: 0}
+    - target: {fileID: 114129582089887352, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: location
+      value: Clinica Palermo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114183711506714234, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: location
+      value: Bienestar Ips
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219888318426142, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: location
+      value: Ips Sura Chapinero
+      objectReference: {fileID: 0}
     - target: {fileID: 114251792932351436, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
       propertyPath: m_Text
-      value: Portal80
+      value: Ips Salud
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287123303640500, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: m_Text
+      value: " IPS Colm\xE9dica Country Park "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114636752709850896, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: m_Text
+      value: Clinica palermo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114791303633794420, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: m_Text
+      value: IPS Colsubsidio Sur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114963665310814296, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: location
+      value: IPS Colsubsidio Sur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986056470046540, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: location
+      value: " IPS Colm\xE9dica Country Park "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114991531217100008, guid: aaa51caf037dd4424bab8d45ef3be316,
+        type: 3}
+      propertyPath: m_Text
+      value: Ips Sura Chapinero
       objectReference: {fileID: 0}
     - target: {fileID: 224155703514620438, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
@@ -1324,12 +1389,12 @@ PrefabInstance:
     - target: {fileID: 681292847313191436, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000018214409
+      value: 0.0000150203705
       objectReference: {fileID: 0}
     - target: {fileID: 681292847313191436, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 117
+      value: 117.000015
       objectReference: {fileID: 0}
     - target: {fileID: 3271483858170168596, guid: aaa51caf037dd4424bab8d45ef3be316,
         type: 3}
@@ -1739,7 +1804,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _vectorData._layerProperty.vectorSubLayers.Array.data[0].GoModifiers.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 9cc65532303e9448e8ecbe284fc7f035,
+      objectReference: {fileID: 11400000, guid: 751b07ae8703bf94aac03912f3c0d03f,
         type: 2}
     - target: {fileID: 114585160210174956, guid: 4cd0111f17b6043cf817880e3fd57cd1,
         type: 3}

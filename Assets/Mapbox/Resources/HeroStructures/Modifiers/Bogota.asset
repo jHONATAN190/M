@@ -10,16 +10,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13ade7ea2a146442b9575619cf724737, type: 3}
-  m_Name: ReplaceGlobalHeroStructuresModifier 1
+  m_Name: Bogota
   m_EditorClassIdentifier: 
   Active: 1
   features:
-  - Name: CENVALLE
+  - Name: BienestarIps
     active: 0
-    prefab: {fileID: 4683628571189339387, guid: b249a56cc37b0a744925b87900470e2d,
+    prefab: {fileID: 4683628571189339387, guid: a764b3422ab2ec14daf68eb7cf0c3e54,
       type: 3}
     scaleDownWithWorld: 0
     _prefabLocations:
-    - 3.420125506075357, -76.54568967800601
+    - 4.729283327273172, -74.06830197509747
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: ClinicaPalermo
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: ddd4794e79fdc1540bf16245fae0d7c3,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.63605809827344, -74.07441990513733
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: IpsSalud
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: 93266fa6fcb79fd41b2f26a0fa5885cd,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.685768046839687, -74.05324518836368
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: IpsSuraChapinero
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: ea9affa9220f1464f936f3c085da4f90,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.640460213263896, -74.06285883683535
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: "IPSColm\xE9dicaCountryPark"
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: 887f3fda4b0829c479f98b2cb14782d9,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.669459539803079, -74.05747804877137
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: IPSColsubsidioSur
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: 6dfb5bc267cbdfc44968d45b3437b014,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.640460213263896, -74.06285883683535
+    _explicitlyBlockedFeatureIds:
+    - 
+  - Name: IpsSuraChapinero
+    active: 0
+    prefab: {fileID: 4683628571189339387, guid: ea9affa9220f1464f936f3c085da4f90,
+      type: 3}
+    scaleDownWithWorld: 0
+    _prefabLocations:
+    - 4.640460213263896, -74.06285883683535
     _explicitlyBlockedFeatureIds:
     - 
