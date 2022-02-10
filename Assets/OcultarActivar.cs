@@ -17,6 +17,7 @@ public class OcultarActivar : MonoBehaviour
             objeto.SetActive(true);
         else
             objeto.SetActive(false);
+       
     }
     
 }
